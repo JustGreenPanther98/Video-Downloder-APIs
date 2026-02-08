@@ -36,7 +36,7 @@ Facebook
 GET /api/v1/facebook/download
 =======
 1) Facebook
->GET /api/v1/facebook/download
+>POST /api/v1/facebook/download
 >>>>>>> 3c904e29dcc2cf1722d633e79d3d36158344c8ac
 
 Note: Ensure your URL does not end with a end with /.
