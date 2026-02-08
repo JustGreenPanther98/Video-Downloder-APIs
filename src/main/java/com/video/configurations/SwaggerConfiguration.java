@@ -31,7 +31,7 @@ public class SwaggerConfiguration {
 
 		openAPI.setServers(
 				List.of(new Server().url("https://platform-video-downloder.onrender.com").description("PUBLIC"),
-						new Server().url("http://localhost:2026").description("LOCAL")));
+						new Server().url("http://localhost:2026").description("Local System")));
 
 		return openAPI;
 	}
