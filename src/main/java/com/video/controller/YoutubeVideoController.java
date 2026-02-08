@@ -25,13 +25,13 @@ public class YoutubeVideoController {
 
 	@GetMapping("/download")
 	@Operation(description = "It takes long Youtube video (link) as input and gives download URL")
-	public YoutubeDownloadResponse downloadVideo(@RequestParam("url") @NotNull String youtubeLink) {
+	public YoutubeDownloadResponse downloadVideo(@RequestParam("url") String youtubeLink) {
 		return youtubeService.downloadVideo(youtubeLink, true);
 	}
 
 	@GetMapping("/shorts/download")
 	@Operation(description = "It takes Youtube shorts (link) as input and gives download URL")
-	public YoutubeDownloadResponse downloadShortVideo(@RequestParam("url") @NotNull String youtubeLink) {
+	public YoutubeDownloadResponse downloadShortVideo(@RequestParam("url") String youtubeLink) {
 		return youtubeService.downloadVideo(youtubeLink, false);
 	}
 }
